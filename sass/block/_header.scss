@@ -21,12 +21,27 @@
         list-style: none;
         font-size: 18px;
         color: $bg-it;
+        transition: 1.2s;
+        &:hover{
+            color: gold;
+            cursor: pointer;
+        }
     }
     &__menu{
         display: none;
     }
     &__btn{
         padding: 10px 20px;
+        border: none;
+        color: $bg-it;
+        background-color: white;
+        transition: 1s;
+        border-radius: 20px;
+        font-size: $fs-text;
+        &:hover{
+background-color: $bg-it;
+color: gold;
+        }
     }
 }
 

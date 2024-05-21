@@ -1,0 +1,53 @@
+.footer{
+   background-color: $bg-py;
+   padding: 50px 0;
+
+    &__wrapper{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+          display: flex;  
+         .text{
+            color: $bg-fff;
+            padding: 0 5px;
+         }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:755px) {
+    .footer{    
+        &__wrapper{
+            flex-direction: column;
+            gap: 15px;
+             font-size: 20px;
+        }
+     
+       
+    }
+}
+
+@media (max-width:435px) {
+    .footer{    
+        &__wrapper{
+            flex-direction: column;
+            gap: 5px;
+            font-size: 10px;
+            font-weight: 100;
+        } 
+        &__card{
+        p{
+            font-size: 10px;
+        }
+        }
+    }
+    
+}

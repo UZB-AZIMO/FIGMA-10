@@ -6,6 +6,7 @@ padding: 50px 0;
     
     &__wrapper{
         display: flex;
+        color: $bg-it;
     }
     &__card{
         line-height: 40px;
@@ -22,6 +23,7 @@ padding: 50px 0;
     }
    &__item{
 font-size: $fs-text;
+
     }
     &__btn{
         margin-top: 20px;
@@ -44,12 +46,14 @@ font-size: $fs-text;
     .hero{
         &__wrapper{
            flex-direction: column;
+           gap: 20px;
            
         }
         &__title{
             font-size: 36px;
         }
         &__text{
+            
             font-size: 20px;
             margin: 15px 0;
             width: 100%;
@@ -59,16 +63,23 @@ font-size: $fs-text;
 
 @media (max-width:440px) {
     .hero{
+        line-height: 1px;
         &__wrapper{
            flex-direction: column;
            gap: 10px;
         }
         &__title{
-            font-size: 25px;
+            font-size: 20px;
         }
         &__text{
-        font-size: 20px;
+        font-size: 13px;
         width: 100%;
+        }
+        &__btn{
+width: 150px;
+margin-top: -20px;
+height: 45px;
+font-size: 12px;
         }
     }
 }
