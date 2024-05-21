@@ -1,0 +1,25 @@
+.about{
+    margin-top: 40px;
+    border: 1px solid red;
+    &__wrapper{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    &__image,
+    &__context{
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width:750px) {
+    .about{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__image,
+        &__context{
+            width: 100%;
+        }
+    }
+}

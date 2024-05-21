@@ -1,0 +1,74 @@
+.hero{
+    width: 100%;
+   background:$bg-py;
+padding: 50px 0;
+
+    
+    &__wrapper{
+        display: flex;
+    }
+    &__card{
+        line-height: 40px;
+        flex: 1;
+    }
+    &__title{
+        font-size: 60px;
+        font-weight: 700;
+        color: $bg-it;
+    }
+    &__text {
+        font-size: $fs-text;
+        width: 600px;
+    }
+   &__item{
+font-size: $fs-text;
+    }
+    &__btn{
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: $fs-text;
+        border: none;
+        transition: 1s;
+        background-color: gold;
+    &:hover{
+            background-color: black;
+            color: gold;
+        }
+    }
+}
+
+
+
+@media (max-width:755px) {
+    .hero{
+        &__wrapper{
+           flex-direction: column;
+           
+        }
+        &__title{
+            font-size: 36px;
+        }
+        &__text{
+            font-size: 20px;
+            margin: 15px 0;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:440px) {
+    .hero{
+        &__wrapper{
+           flex-direction: column;
+           gap: 10px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__text{
+        font-size: 20px;
+        width: 100%;
+        }
+    }
+}

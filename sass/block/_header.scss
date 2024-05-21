@@ -1,0 +1,56 @@
+.header{
+    background: $bg-py;
+    
+}
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        font-size: 32px;
+        user-select: none;
+    }
+    &__collection{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        color: $bg-it;
+    }
+    &__item{
+        list-style: none;
+        font-size: 18px;
+        color: $bg-it;
+    }
+    &__menu{
+        display: none;
+    }
+    &__btn{
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+@media (
+    max-width:755px) {
+    .navbar{
+        &__collection{
+            display: none;
+        }
+        &__menu{
+            display: block;
+        }
+    }
+}
+@media (max-width:345px) {
+    .navbar{
+        &__logo{
+            font-size: 24px;
+        }
+
+    }
+}
+

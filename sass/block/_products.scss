@@ -1,0 +1,32 @@
+.products{
+    margin-top: 50px;
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        border: 1px solid blue;
+        gap: 10px;
+    }
+    &__card{
+        width: calc(25% - 7.5px);
+        padding: 20px;
+        border: 1px solid red;
+    }
+}
+
+
+
+@media (max-width:990px) {
+    .products{
+        &__card{
+            width: calc(50% - 5px);
+        }
+    }
+}
+@media (max-width:500px) {
+    .products{
+        &__card{
+            width: 100%;
+        }
+    }
+}
